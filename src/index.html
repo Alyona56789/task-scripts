@@ -1,14 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
     <head>
-        <title>Scripts</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Страница с скриптами</title>
     </head>
     <body>
+        <!-- Встроенный скрипт -->
         <script>
             document.body.append('inline');
         </script>
-        <script src="src/scripts/sync.js"></script>
-        <script src="src/scripts/async.js" async></script>
-        <script src="src/scripts/defer.js" defer></script>
+
+        <!-- Внешний асинхронный скрипт -->
+        <script src="scripts/async.js" async></script>
+
+        <!-- Внешний скрипт с отложенным выполнением -->
+        <script src="scripts/defer.js" defer></script>
+
+        <!-- Внешний синхронный скрипт -->
+        <script src="scripts/sync.js"></script>
     </body>
 </html>
